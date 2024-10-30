@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architect-dream</title>
+    <!--Daisy-Ui-Tailwind-css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font-awesome-link-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- configaration-file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#212121",
+              secondary: "#494949",
+              button: "#ABEF5F",
+            },
+            fontFamily: {
+              manrope: "Manrope",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <header class="bg-gradient-to-r from-gray-100 to-gray-50">
+      <nav class="w-11/12 mx-auto">
+        <div class="navbar p-0 py-5">
+          <div class="navbar-start">
+            <a href="#">
+              <i
+                class="fa-solid fa-arrow-right w-8 h-8 rounded-full flex justify-center items-center bg-button -rotate-45 p-2"
+              ></i>
+            </a>
+            <span class="ml-3 text-3xl text-primary font-bold">Rinterio</span>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-base font-medium text-[#737373]"
+            >
+              <li
+                class="active:bg-violet-700 transition-all duration-300 ease-in-out mr-5"
+              >
+                <a href="">Home</a>
+              </li>
+              <li
+                class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out mr-5"
+              >
+                <a>Service</a>
+              </li>
+              <li
+                class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out mr-5"
+              >
+                <a>Portfolio</a>
+              </li>
+              <li
+                class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out mr-5"
+              >
+                <a>Blogs</a>
+              </li>
+              <li
+                class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out"
+              >
+                <a>Contract Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div
+              class="flex items-center gap-5 font-lg bg-red-5 hidden lg:flex"
+            >
+              <button class="flex items-center gap-2 text-[#737373]">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-magnifying-glass w-14 h-14 bg-white text-lg flex justify-center items-center rounded-full"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fa-solid fa-cart-shopping w-14 h-14 bg-white text-lg flex justify-center items-center rounded-full"
+                  ></i
+                ></a>
+              </button>
+              <button class="px-5 py-2 bg-button rounded-3xl">
+                <a href="" class="flex items-center">
+                  <span class="text-xl font-bold"> Book Consult</span>
+                  <i
+                    class="fa-solid fa-arrow-right w-7 h-7 rounded-full flex justify-center items-center bg-black text-white ml-3 -rotate-45 p-2"
+                  ></i>
+                </a>
+              </button>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars text-xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-5 justify-center items-center"
+              >
+                <li
+                  class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out"
+                >
+                  <a href="">Home</a>
+                </li>
+                <li
+                  class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out"
+                >
+                  <a href="">Service</a>
+                </li>
+                <li
+                  class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out"
+                >
+                  <a href="">Blogs</a>
+                </li>
+                <li
+                  class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out"
+                >
+                  <a href="">Portfolio</a>
+                </li>
+                <li
+                  class="hover:text-white hover:bg-button transition-all duration-300 ease-in-out"
+                >
+                  <a href="">Contract us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
